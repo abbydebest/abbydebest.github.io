@@ -1,0 +1,951 @@
+@font-face {
+    font-family:'ogg';
+    src: url('fonts/Ogg-Roman.otf');
+}
+
+@font-face {
+    font-family:"sportinggrotesquer";
+    src: url("fonts/SportingGrotesque-Regular.otf");
+}
+
+@font-face {
+    font-family: "sportinggrotesqueb";
+    src: url("fonts/SportingGrotesque-Bold.otf");
+}
+
+@font-face {
+    font-family: "abarthfont";
+    src: url("fonts/Microgramma\ D\ Extended\ Bold.otf");
+}
+
+@keyframes blowup {
+    0% {
+        font-size: 1em;
+    }
+    100% {
+        font-size: 1.05em;
+    }
+}
+
+/* 💗💗💗 Home page 💗💗💗 */
+
+body {
+    font-family: sportinggrotesquer;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-size: 0.8em;
+}
+
+/* 🔎🔎🔎 Menubalk/navigatie 🔎🔎🔎 */
+
+header {
+   position: sticky;
+   top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+    font-family: sportinggrotesquer;
+    font-size: 1.3em;
+    
+    background-color: #DFFF2F;
+    padding: 0.6em 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    width: 100vw;
+
+    list-style-type: none;
+    padding: 0 5em;
+}
+
+header nav ul li:first-of-type {
+    margin-right: auto;
+    font-family: abarthfont;
+
+    font-size: 1.8em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.95em;
+}
+
+/* ⚡️⚡️⚡️ 1st section: 2 columns ⚡️⚡️⚡️ */
+/* Source container/classes: https://bit.ly/3Yu79eg */
+/* Source background image li: https://bit.ly/3FzFL6b */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: black;
+    color: white;
+}
+
+.text ul {
+    display: flex;
+    flex-direction: row;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.text ul li:first-of-type {
+    margin-left: 5.5em;
+    margin-bottom: 12em;
+}
+
+.text ul li p {
+    max-width: 70%;
+}
+
+.index section:first-of-type ul li:nth-of-type(2) {
+    display: block;
+    text-align: center;
+    background-image: url("images/2020-abarth-695-70°-anniversario-special-edition-27.jpg");
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position-x: 40%;
+    background-position-y: 40%;
+    width: 100%;
+}
+
+section:first-of-type article ul li {
+    width: 100%;
+}
+
+/* ✨✨✨ 2nd section: The Abarth philosophy ✨✨✨ */
+/* container */
+.index section:nth-of-type(2) {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    justify-content: center;
+}
+
+/* text */
+.index section:nth-of-type(2) section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2em 0 6em 0;
+    max-width: 40%;
+    min-width: 40%;
+}
+
+/* 🐆🐆🐆 3rd section: The first logo 🐆🐆🐆 */
+
+.index section:nth-of-type(3) ul{
+    flex-direction: row-reverse;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+.index section:nth-of-type(3) ul li:first-of-type {
+    margin-left: 5.5em;
+    margin-bottom: 4em;
+    padding: 0;
+}
+
+/* Source image(edited): https://bit.ly/3HRl9ZH */
+section:nth-of-type(3) ul li:nth-of-type(2) {
+    display: block;
+    text-align: center;
+    background-image: url("images/Asset-21.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 40%;
+    background-position-y: 40%;
+    width: 100%;
+}
+
+section:nth-of-type(3) article ul li {
+    width: 100%;
+}
+
+/* 🪩🪩🪩 4th Section: The latest logo 🪩🪩🪩 */
+
+section:nth-of-type(4) ul {
+    background-color: white;
+    color: black;
+    padding: 0;
+}
+
+section:nth-of-type(4) ul li:first-of-type{
+    padding: 0;
+    margin-left: 5.5em;
+    margin-bottom: 4em;
+}
+
+/* Source image(edited): https://bit.ly/3G5sQKy */
+section:nth-of-type(4) ul li:nth-of-type(2) {
+    display: block;
+    text-align: center;
+    background-image: url("images/abarth-logo-2007-21.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+section:nth-of-type(4) article ul li {
+    width: 100%;
+}
+
+/* 👀👀👀 5th section: Abarth banner 👀👀👀 */
+
+section:nth-of-type(5) {
+    background-color: #DFFF2F;
+    padding: 0.2em 0;
+}
+
+section:nth-of-type(5) h1 {
+    font-family: abarthfont;
+    text-transform: uppercase;
+}
+
+/* 💬💬💬 6th section: More about Abarth 💬💬💬 */
+
+.index section:nth-of-type(6) {
+    background-color: #E1EAE5;
+    padding: 2em 3em;
+}
+
+.moreabout {
+    display: block;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25vw;
+    height: 15vw;
+}
+
+.index section:nth-of-type(6) ul:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 4em;
+}
+
+/* Source image: https://bit.ly/3Vfncdl */
+.index section:nth-of-type(6) ul:first-of-type li:nth-of-type(1) {
+    background-image: url("images/BRAND_MONDO_ObiettivoRecord_1920.jpg");
+}
+
+/* Source image: https://bit.ly/3PEKTKU */
+.index section:nth-of-type(6) ul:first-of-type li:nth-of-type(2) {
+    background-image: url("images/pascal-frei-GMha_IE-SbI-unsplash.jpg");
+    background-position-y: 70%;
+}
+
+/* Source image: https://bit.ly/3G9BiJ0 */
+.index section:nth-of-type(6) ul:first-of-type li:nth-of-type(3) {
+    background-image: url("images/166234-fiat-abarth-695-70-anniversario-12.jpg");
+}
+
+.index section:nth-of-type(6) ul:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 4em;
+}
+
+.index section:nth-of-type(6) ul:nth-of-type(2) li:nth-of-type(1) {
+    padding-left: 1em;
+}
+
+.index section:nth-of-type(6) ul:nth-of-type(2) li:nth-of-type(2) {
+    padding-left: 10em;
+}
+
+.index section:nth-of-type(6) ul:nth-of-type(2) li:nth-of-type(3) {
+    padding-right: 8em;
+}
+
+/* 👩🏼‍💻👩🏼‍💻👩🏼‍💻 7th section: Abarth photo gallery text 👩🏼‍💻👩🏼‍💻👩🏼‍💻 */
+
+.index section:nth-of-type(7) {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    justify-content: center;
+}
+
+.index section:nth-of-type(7) section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1.5em 0 4em 0;
+    max-width: 40%;
+    min-width: 40%;
+}
+
+/* 🔥🔥🔥 8th section: Photo gallery 🔥🔥🔥 */
+
+.photo {
+    display: block;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33vw;
+    height: 33.33vw;
+}
+
+.index section:nth-of-type(8) ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/* First ul */
+/* Source image: https://bit.ly/3hJH22z */
+.index section:nth-of-type(8) ul li:nth-of-type(1) {
+    background-image: url("images/pascal-frei-Rc7CqNSwMZo-unsplash.jpg");
+    background-position-y: 60%;
+}
+
+/* Source image: https://bit.ly/3G8ju0H */
+.index section:nth-of-type(8) ul li:nth-of-type(2) {
+    background-image: url("images/2023-Abarth-500e-Front-Wallpaper-12.jpeg");
+    background-position-y: 60%;
+}
+
+/* Source image: https://bit.ly/3Wh8pA4 */
+.index section:nth-of-type(8) ul li:nth-of-type(3) {
+    background-image: url("images/191004-abarth-nuova-695-18-1570217163.jpg");
+    background-position-x: 30%;
+}
+
+/* Second ul */
+/* Source image: https://bit.ly/3WoqLii */
+.index section:nth-of-type(8) ul:nth-of-type(2) li:nth-of-type(1) {
+    background-image: url("images/Editorial_content_595_EsseEsse_512x557_placeholder.jpg");
+    background-position-y: 60%;
+}
+
+/* Source image: https://bit.ly/3FLI0TN */
+.index section:nth-of-type(8) ul:nth-of-type(2) li:nth-of-type(2) {
+    background-image: url("images/pascal-frei--ym-hJBb5Xk-unsplash.jpg");
+    background-position-y: 50%;
+}
+
+/* Source image: https://bit.ly/3WwiKaX */
+.index section:nth-of-type(8) ul:nth-of-type(2) li:nth-of-type(3) {
+    background-image: url("images/pascal-frei-EtvHuWSBQhI-unsplash.jpg");
+    background-position-x: 30%;
+}
+
+/* Third ul */
+/* Source image: https://bit.ly/3V7Ozpy */
+.index section:nth-of-type(8) ul:nth-of-type(3) li:nth-of-type(1) {
+    background-image: url("images/595_Competizione_Performance_Hotspot_02_desktop-v2.jpg");
+    background-position-y: 60%;
+}
+
+/* Source image: https://bit.ly/3PG8gUi */
+.index section:nth-of-type(8) ul:nth-of-type(3) li:nth-of-type(2) {
+    background-image: url("images/elia-burelli-OAOClnqRsaw-unsplash.jpg");
+    background-position-y: 50%;
+}
+
+/* Source image: https://bit.ly/3WzHgbc */
+.index section:nth-of-type(8) ul:nth-of-type(3) li:nth-of-type(3) {
+    background-image: url("images/La\ nouvelle\ Fiat\ Abarth\ 595\ sera\ encore\ plus\ agressive\ en\ 2019_.jpg");
+    background-position-x: 40%;
+}
+
+/* 🌶️🌶️🌶️ Footer 🌶️🌶️🌶️ */
+
+.index footer {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+/* .index footer ul {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 1em 3em;
+    margin: 0;
+} */
+
+/* .index footer ul li:first-of-type {
+    max-width: 30vw;
+} */
+
+/* .index footer ul li:nth-of-type(2) {
+    text-align: start;
+    background-image: none;
+    max-width: 30vw;
+} */
+
+/* Footer line */
+.index footer section:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5em 0;
+    background-color: black;
+    border-top: solid white;
+}
+
+.index footer section:nth-of-type(1) p {
+    margin: 0;
+    padding-left: 3em;
+}
+
+.index footer section:nth-of-type(2) {
+    background-color: #DFFF2F;
+    padding: 2em;
+}
+
+/* 💗💗💗 History page 💗💗💗 */
+
+.history {
+    background-color: #E1EAE5;
+}
+
+/* 🥥🥥🥥 1st section: History title 🥥🥥🥥 */
+
+.history section:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ✌🏼✌🏼✌🏼 2nd section: The rise of a legend ✌🏼✌🏼✌🏼 */
+
+.history .container {
+    background-color: #E1EAE5;
+    color: black;
+}
+
+.history section:nth-of-type(2) ul {
+    flex-direction: row-reverse;
+}
+
+.history .text ul li:first-of-type {
+    margin-bottom: 4em;
+}
+
+/* Source image: https://bit.ly/3WAA3Ie */
+.history section:nth-of-type(2) ul li:nth-of-type(2) {
+    background-image: url("images/BRAND_MONDO_PilotaCampione_Sfondo_1920.jpg");
+    background-size: cover;
+    background-position-y: 0%;
+}
+
+.history .container article ul li {
+    width: 100%;
+}
+
+/* 🥂🥂🥂 2nd section: 21 March 1949 Abarths foundation 🥂🥂🥂 */
+
+.history section:nth-of-type(3) ul {
+    flex-direction: row;
+}
+
+/* Source image: https://bit.ly/3BS2p8R */
+.history section:nth-of-type(3) ul li:nth-of-type(2) {
+    background-image: url("images/Cisitalia-204A-Abarth-Spider-race-car.jpg");
+    background-size: cover;
+    background-position-y: 0%;
+}
+
+/* 🍋🍋🍋 4th section: Abarth banner 🍋🍋🍋 */
+
+.history section:nth-of-type(4) {
+    background-color: #DFFF2F;
+    padding: 0.2em 0;
+}
+
+.history section:nth-of-type(4) h1 {
+    font-family: abarthfont;
+    text-transform: uppercase;
+}
+
+/* 🍙🍙🍙 5th section: 4 May 1950 The succes of Abarth exhaust 🍙🍙🍙 */
+
+/* Source image: https://bit.ly/3v4b83J */
+.history section:nth-of-type(5) ul li:nth-of-type(2) {
+    background-image: url("images/2018-abarth-595-competizione-hatch-red-1200x800-\(9\)_0.webp");
+    background-size: cover;
+    background-position-x: right;
+}
+
+/* 🥐🥐🥐 6th section: 17 June 1956 The age of records 🥐🥐🥐 */
+
+/* Source image: https://bit.ly/3VdeWdG */
+.history section:nth-of-type(6) ul li:nth-of-type(2) {
+    background-image: url("images/D_03_l\'era_dei_record.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+}
+
+.history section:nth-of-type(5) ul {
+    flex-direction: row-reverse;
+}
+
+.history section:nth-of-type(5) ul h1 {
+    font-family: ogg;
+    text-transform: none;
+}
+
+/* 🥟🥟🥟 7th section: Abarth banner 2 🥟🥟🥟 */
+
+.history section:nth-of-type(7) {
+    background-color: #DFFF2F;
+    padding: 0.2em 0;
+}
+
+.history section:nth-of-type(7) h1 {
+    font-family: abarthfont;
+    text-transform: uppercase;
+}
+
+/* 🍥🍥🍥 8th section: 1956 Abarth tuning kits 🍥🍥🍥 */
+
+/* Source image: https://bit.ly/3BQuVaF */
+.history section:nth-of-type(8) ul li:nth-of-type(2) {
+    background-image: url("images/vehicle_ad_standard_image_97fb4dd79014dcfd574940936448bd9e.jpg");
+    background-size: cover;
+    background-position-x: right;
+}
+
+.history section:nth-of-type(8) ul {
+    flex-direction: row-reverse;
+    background-color: white;
+}
+
+/* ☁️☁️☁️ 9th section: 1958 The move to Corso Marche ☁️☁️☁️ */
+
+/* Source image: https://bit.ly/3YBCNXw */
+.history section:nth-of-type(9) ul li:nth-of-type(2) {
+    background-image: url("images/6ba1b1df2194c31c437cc3d3fcf9b289.jpg");
+    background-size: cover;
+    background-position-x: right;
+}
+
+/* 👄👄👄 10th section: Abarth banner 3 👄👄👄 */
+
+.history section:nth-of-type(10) {
+    background-color: #DFFF2F;
+    padding: 0.2em 0;
+}
+
+.history section:nth-of-type(10) h1 {
+    font-family: abarthfont;
+    text-transform: uppercase;
+}
+
+/* 🥖🥖🥖 11th section: Abarth's dual personality 🥖🥖🥖 */
+
+/* Source image: https://bit.ly/3G8xw2w */
+.history section:nth-of-type(11) ul li:nth-of-type(2) {
+    background-image: url("images/RUOTE-DORO-Fiat-Abarth-850-TC.webp");
+    background-size: cover;
+    background-position-x: right;
+}
+
+.history section:nth-of-type(11) ul {
+    flex-direction: row-reverse;
+    background-color: white;
+}
+
+/* 🧋🧋🧋 12th section: 15 October 1971 Abarth, Fiat racing team 🧋🧋🧋 */
+
+.history section:nth-of-type(12) ul {
+    background-color: white;
+}
+
+/* Source image: https://bit.ly/3FLeYE4 */
+.history section:nth-of-type(12) ul li:nth-of-type(2) {
+    background-image: url("images/Fiat-124-Rally-Spider-3\).jpg");
+    background-size: cover;
+    background-position-x: right;
+}
+
+/* 🎧🎧🎧 13th section: Abarth banner 4 🎧🎧🎧 */
+
+.history section:nth-of-type(13) {
+    background-color: #DFFF2F;
+    padding: 0.2em 0;
+}
+
+.history section:nth-of-type(13) h1 {
+    font-family: abarthfont;
+    text-transform: uppercase;
+}
+
+/* 💻💻💻 14th section: 6 November 1977 💻💻💻 */
+
+/* Source image: https://bit.ly/3PES8m4 */
+.history section:nth-of-type(14) ul li:nth-of-type(2) {
+    background-image: url("images/art-mg-abarth131a.jpg");
+    background-size: cover;
+    background-position-x: left;
+}
+
+.history section:nth-of-type(14) ul {
+    flex-direction: row-reverse;
+}
+
+/* 💸💸💸 15th section: 1977 Victories alongside Lancia 💸💸💸 */
+
+.history section:nth-of-type(15) ul {
+    background-color: white;
+}
+
+/* Source image: https://bit.ly/3WwjigZ */
+.history section:nth-of-type(15) ul li:nth-of-type(2) {
+    background-image: url("images/Lancia-Delta-HF-Integrale-Evo-157876.jpg");
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+
+/* 🤍🤍🤍 16th section: Abarth banner 5 🤍🤍🤍 */
+
+.history section:nth-of-type(16) {
+    background-color: #DFFF2F;
+    padding: 0.2em 0;
+}
+
+.history section:nth-of-type(16) h1 {
+    font-family: abarthfont;
+    text-transform: uppercase;
+}
+
+/* 💅🏻💅🏻💅🏻 17th section: 2007 The scorpion renaiccance 💅🏻💅🏻💅🏻 */
+
+/* Source image: https://bit.ly/3YGHBe0 */
+.history section:nth-of-type(17) ul li:nth-of-type(2) {
+    background-image: url("images/Editorial_content_595_EsseEsse_512x557_placeholder.jpg");
+    background-size: cover;
+    background-position-x: right;
+}
+
+.history section:nth-of-type(17) ul {
+    flex-direction: row-reverse;
+}
+
+/* 🙈🙈🙈 Footer 🙈🙈🙈 */
+
+.history footer section:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5em 0;
+    background-color: black;
+    border-top: solid white;
+}
+
+.history footer section:nth-of-type(1) p {
+    margin: 0;
+    padding-left: 3em;
+    color: white;
+}
+
+.history footer section:nth-of-type(2) {
+    background-color: #DFFF2F;
+    padding: 2em;
+}
+
+/* .history footer section:first-of-type ul {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 1em 3em;
+    margin: 0;
+} */
+
+/* .history section:first-of-type ul li:nth-of-type(2) {
+    text-align: start;
+    background-image: none;
+    max-width: 30vw;
+} */
+
+/* 💗💗💗 Fiat 500 Abarth Models page 💗💗💗 */
+
+.models {
+    background-color: #E1EAE5;
+}
+
+/* 💖💖💖 1st section: Models title 💖💖💖 */
+
+.models section:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 💭💭💭 2nd section: Fiat 500 Abarth 💭💭💭 */
+
+.models .container {
+    background-color: #E1EAE5;
+    color: black;
+}
+
+.models section:nth-of-type(2) ul {
+    flex-direction: row-reverse;
+}
+
+.models .text ul li:first-of-type {
+    margin-bottom: 4em;
+}
+
+/* Source image: https://bit.ly/3jlwCXv */
+.models section:nth-of-type(2) ul li:nth-of-type(2) {
+    background-image: url("images/563v0qVIZbZYkgxomq07IF-13148760f1cbfaabd878686978a71f72-Fiat-500_Abarth-2012-1600-20-1100.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
+.models .container article ul li {
+    width: 100%;
+}
+
+/* 🌙🌙🌙 3rd section: Fiat 500 Abarth Esseesse 🌙🌙🌙 */
+
+/* Source image: https://bit.ly/3VedBTS */
+.models section:nth-of-type(3) ul li:nth-of-type(2) {
+    background-image: url("images/maxresdefault.jpg");
+    background-size: cover;
+    background-position-x: right;
+}
+
+.models section:nth-of-type(3) ul {
+    flex-direction: row-reverse;
+    background-color: white;
+}
+
+/* 🍕🍕🍕 4th section: Fiat 500C Abarth 🍕🍕🍕 */
+
+/* Source image: https://bit.ly/3PM3ox8 */
+.models section:nth-of-type(4) ul li:nth-of-type(2) {
+    background-image: url("images/2013-Fiat-500c-Abarth-front-three-quarters1.webp");
+    background-size: cover;
+    background-position-x: right;
+}
+
+.models section:nth-of-type(4) ul {
+    flex-direction: row-reverse;
+    background-color: #E1EAE5;
+}
+
+/* 🥡🥡🥡 5th section: Fiat 595 Abarth 🥡🥡🥡 */
+
+/* Source image: https://bit.ly/3YPlRNo */
+.models section:nth-of-type(5) ul li:nth-of-type(2) {
+    background-image: url("images/abarth-595-2020-prijzen-03.jpg");
+    background-size: cover;
+}
+
+.models section:nth-of-type(5) ul {
+    flex-direction: row-reverse;
+    background-color: white;
+}
+
+.models section:nth-of-type(5) ul h1 {
+    font-family: ogg;
+    text-transform: none;
+}
+
+/* 📷📷📷 6th section: Fiat 695 Abarth Biposto 📷📷📷 */
+
+/* Source image: https://bit.ly/3YBiwRL */
+.models section:nth-of-type(6) ul li:nth-of-type(2) {
+    background-image: url("images/interni.jpg");
+    background-size: cover;
+    background-position-x: right;
+}
+
+.models section:nth-of-type(6) ul {
+    flex-direction: row-reverse;
+    background-color: #E1EAE5;
+}
+
+/* 💌💌💌 Footer 💌💌💌 */
+
+.models footer section:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5em 0;
+    background-color: black;
+    border-top: solid white;
+}
+
+.models footer section:nth-of-type(1) p {
+    margin: 0;
+    padding-left: 3em;
+    color: white;
+}
+
+.models footer section:nth-of-type(2) {
+    background-color: #DFFF2F;
+    padding: 2em;
+}
+
+/* .models footer ul {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 1em 3em;
+    margin: 0;
+}
+
+.models footer ul li:nth-of-type(2) {
+    text-align: start;
+    background-image: none;
+    max-width: 30vw;
+} */
+
+/* 💗💗💗 Abarth 695 70 anniversary page 💗💗💗 */
+
+.monza {
+    background-color: #E1EAE5;
+}
+
+/* 📓📓📓 1st section: Abarth 695 70 anniversary clip 1 📓📓📓 */
+
+/* Source video: https://bit.ly/3YQUPFt */
+/* Source code: https://bit.ly/3FIawpu */
+#video {
+    height: 90vh;
+    overflow: hidden;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* 💕💕💕 2nd section: Abarth 695 70 anniversary */
+
+.monza section:nth-of-type(2) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: white;
+}
+
+/* text */
+.monza section:nth-of-type(2) section {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin: 2em 0 6em 0;
+    max-width: 40%;
+    min-width: 40%;
+}
+
+/* 💪🏼💪🏼💪🏼 Footer 💪🏼💪🏼💪🏼 */
+
+.monza footer section:nth-of-type(1) {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5em 0;
+    background-color: black;
+    border-top: solid white;
+}
+
+.monza footer section:nth-of-type(1) p {
+    margin: 0;
+    padding-left: 3em;
+    color: white;
+}
+
+.monza footer section:nth-of-type(2) {
+    background-color: #DFFF2F;
+    padding: 2em;
+}
+
+/* 💞💞💞 Overall styles 💞💞💞 */
+
+h1 {
+    font-family: ogg, Cochin, Baskerville;
+    font-weight: 400;
+    font-size: 5em;
+    line-height: 0.78em;
+}
+
+h3 {
+    font-family: sportinggrotesquer;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Does not work */
+.active {
+    font-family: sportinggrotesqueb, HelveticaNeue bold, Avenir Next bold;
+    display: inline-block;
+}
+
+.animation:hover {
+    text-decoration: underline;
+    animation-name: blowup;
+    animation-duration: 1s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.banner {
+    display: flex;
+    background-color: #DFFF2F;
+    padding: 0.2em 0;
+    font-family: abarthfont, ArialBlack, Impact;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1220px) {
+    ul {
+        flex-direction: column;
+    }
+
+    .text ul {
+        flex-direction: column;
+    }
+
+    header nav ul li:first-of-type {
+        margin-right: 0%;
+    }
+
+    .index section:nth-of-type(2) section {
+        max-width: 70%;
+    }
+
+    .index section:nth-of-type(8) ul {
+        flex-flow: nowrap;
+    }
+
+
+}
+
+/* ❕❕❕ Other/general souces ❕❕❕ */
+ /* px to em converter: https://bit.ly/3YnNOLQ */
+ /* Flexbox info: https://bit.ly/3WcncMh */
+ /* HTML & CSS basics: https://www.internetingishard.com */
